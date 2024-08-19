@@ -140,10 +140,7 @@ from .brightcove import (
 from .buzzfeed import BuzzFeedIE
 from .byutv import BYUtvIE
 from .c56 import C56IE
-from .camdemy import (
-    CamdemyIE,
-    CamdemyFolderIE
-)
+from .camdemy import CamdemyIE, CamdemyFolderIE
 from .camwithher import CamWithHerIE
 from .canalplus import CanalplusIE
 from .canalc2 import Canalc2IE
@@ -224,10 +221,7 @@ from .cracked import CrackedIE
 from .crackle import CrackleIE
 from .criterion import CriterionIE
 from .crooksandliars import CrooksAndLiarsIE
-from .crunchyroll import (
-    CrunchyrollIE,
-    CrunchyrollShowPlaylistIE
-)
+from .crunchyroll import CrunchyrollIE, CrunchyrollShowPlaylistIE
 from .cspan import CSpanIE
 from .ctsnews import CtsNewsIE
 from .ctvnews import CTVNewsIE
@@ -449,10 +443,7 @@ from .ign import (
     OneUPIE,
     PCMagIE,
 )
-from .imdb import (
-    ImdbIE,
-    ImdbListIE
-)
+from .imdb import ImdbIE, ImdbListIE
 from .imgur import (
     ImgurIE,
     ImgurAlbumIE,
@@ -471,10 +462,7 @@ from .iprima import IPrimaIE
 from .iqiyi import IqiyiIE
 from .ir90tv import Ir90TvIE
 from .itv import ITVIE
-from .ivi import (
-    IviIE,
-    IviCompilationIE
-)
+from .ivi import IviIE, IviCompilationIE
 from .ivideon import IvideonIE
 from .iwara import IwaraIE
 from .izlesene import IzleseneIE
@@ -557,10 +545,7 @@ from .lnkgo import LnkGoIE
 from .localnews8 import LocalNews8IE
 from .lovehomeporn import LoveHomePornIE
 from .lrt import LRTIE
-from .lynda import (
-    LyndaIE,
-    LyndaCourseIE
-)
+from .lynda import LyndaIE, LyndaCourseIE
 from .m6 import M6IE
 from .macgamestore import MacGameStoreIE
 from .mailru import MailRuIE
@@ -609,10 +594,7 @@ from .mofosex import MofosexIE
 from .mojvideo import MojvideoIE
 from .moniker import MonikerIE
 from .morningstar import MorningstarIE
-from .motherless import (
-    MotherlessIE,
-    MotherlessGroupIE
-)
+from .motherless import MotherlessIE, MotherlessGroupIE
 from .motorsport import MotorsportIE
 from .movieclips import MovieClipsIE
 from .moviezine import MoviezineIE
@@ -899,7 +881,13 @@ from .rtl2 import (
 )
 from .rtp import RTPIE
 from .rts import RTSIE
-from .rtve import RTVEALaCartaIE, RTVELiveIE, RTVEInfantilIE, RTVELiveIE, RTVETelevisionIE
+from .rtve import (
+    RTVEALaCartaIE,
+    RTVELiveIE,
+    RTVEInfantilIE,
+    RTVELiveIE,
+    RTVETelevisionIE,
+)
 from .rtvnh import RTVNHIE
 from .rudo import RudoIE
 from .ruhd import RUHDIE
@@ -970,16 +958,13 @@ from .soundcloud import (
     SoundcloudPlaylistIE,
     SoundcloudSearchIE,
 )
-from .soundgasm import (
-    SoundgasmIE,
-    SoundgasmProfileIE
-)
+from .soundgasm import SoundgasmIE, SoundgasmProfileIE
 from .southpark import (
     SouthParkIE,
     SouthParkDeIE,
     SouthParkDkIE,
     SouthParkEsIE,
-    SouthParkNlIE
+    SouthParkNlIE,
 )
 from .spankbang import SpankBangIE
 from .spankwire import SpankwireIE
@@ -1143,10 +1128,7 @@ from .twitter import (
     TwitterIE,
     TwitterAmplifyIE,
 )
-from .udemy import (
-    UdemyIE,
-    UdemyCourseIE
-)
+from .udemy import UdemyIE, UdemyCourseIE
 from .udn import UDNEmbedIE
 from .ufctv import UFCTVIE
 from .uktvplay import UKTVPlayIE
@@ -1251,11 +1233,7 @@ from .vk import (
     VKUserVideosIE,
     VKWallPostIE,
 )
-from .vlive import (
-    VLiveIE,
-    VLiveChannelIE,
-    VLivePlaylistIE
-)
+from .vlive import VLiveIE, VLiveChannelIE, VLivePlaylistIE
 from .vodlocker import VodlockerIE
 from .vodpl import VODPlIE
 from .vodplatform import VODPlatformIE
@@ -1318,12 +1296,7 @@ from .xhamster import (
     XHamsterIE,
     XHamsterEmbedIE,
 )
-from .xiami import (
-    XiamiSongIE,
-    XiamiAlbumIE,
-    XiamiArtistIE,
-    XiamiCollectionIE
-)
+from .xiami import XiamiSongIE, XiamiAlbumIE, XiamiArtistIE, XiamiCollectionIE
 from .xminus import XMinusIE
 from .xnxx import XNXXIE
 from .xstream import XstreamIE
