@@ -20,7 +20,7 @@ class TotalWebCastingIE(InfoExtractor):
     def _real_extract(self, url):
         """
 
-        :param url: 
+        :param url:
 
         """
         params = url.split("?", 1)[1]
