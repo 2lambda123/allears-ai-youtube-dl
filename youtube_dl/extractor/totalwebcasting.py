@@ -4,6 +4,7 @@ from .common import InfoExtractor
 
 
 class TotalWebCastingIE(InfoExtractor):
+    """ """
     IE_NAME = "totalwebcasting.com"
     _VALID_URL = r"https?://www\.totalwebcasting\.com/view/\?func=VOFF.*"
     _TEST = {
@@ -17,6 +18,11 @@ class TotalWebCastingIE(InfoExtractor):
     }
 
     def _real_extract(self, url):
+        """
+
+        :param url: 
+
+        """
         params = url.split("?", 1)[1]
         webpage = self._download_webpage(url, params)
         aprm = self._search_regex(r"startVideo\('(\w+)'", webpage, "aprm")
