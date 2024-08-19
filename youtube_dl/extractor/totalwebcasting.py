@@ -8,9 +8,11 @@ class TotalWebCastingIE(InfoExtractor):
     IE_NAME = "totalwebcasting.com"
     _VALID_URL = r"https?://www\.totalwebcasting\.com/view/\?func=VOFF.*"
     _TEST = {
-        "url": "https://www.totalwebcasting.com/view/?func=VOFF&id=columbia&date=2017-01-04&seq=1",
+        "url":
+        "https://www.totalwebcasting.com/view/?func=VOFF&id=columbia&date=2017-01-04&seq=1",
         "info_dict": {
-            "id": "270e1c415d443924485f547403180906731570466a42740764673853041316737548",
+            "id":
+            "270e1c415d443924485f547403180906731570466a42740764673853041316737548",
             "title": "Real World Cryptography Conference 2017",
             "description": "md5:47a31e91ed537a2bb0d3a091659dc80c",
         },
@@ -27,7 +29,8 @@ class TotalWebCastingIE(InfoExtractor):
         webpage = self._download_webpage(url, params)
         aprm = self._search_regex(r"startVideo\('(\w+)'", webpage, "aprm")
         VLEV = self._download_json(
-            "https://www.totalwebcasting.com/view/?func=VLEV&aprm=%s&style=G" % aprm,
+            "https://www.totalwebcasting.com/view/?func=VLEV&aprm=%s&style=G" %
+            aprm,
             aprm,
         )
         parts = []
@@ -49,13 +52,11 @@ class TotalWebCastingIE(InfoExtractor):
             for s in VLEV["playerObj"]["clip"]["sources"]:
                 if s["type"] != "video/mp4":
                     continue
-                entries.append(
-                    {
-                        "id": "%s_part%d" % (aprm, p),
-                        "url": "https:" + s["src"],
-                        "title": title,
-                    }
-                )
+                entries.append({
+                    "id": "%s_part%d" % (aprm, p),
+                    "url": "https:" + s["src"],
+                    "title": title,
+                })
         return {
             "_type": "multi_video",
             "id": aprm,
